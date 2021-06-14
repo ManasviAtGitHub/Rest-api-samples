@@ -23,7 +23,7 @@ app.use("/api/profiles", routeProfiles);
 //     res.send("Welcome to express again");
 // });
 
-const uri = "mongodb+srv://manasvi:Ae5l97ShvtsZlF2V@node-temp-cluster.ripkq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+const uri = "mongodb+srv://<username>:<password>@node-temp-cluster.ripkq.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 mongoose.connect(uri,{useNewUrlParser: true, useUnifiedTopology: true},()=>
     console.log("connected to mongodb")
 );
